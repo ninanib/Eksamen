@@ -1,0 +1,52 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: didot;
+}
+
+header {
+width: 100%;
+background-color: #999b84;
+}
+
+header img {
+    height: 100px;
+}
+
+.home {
+position: relative;
+width: 100%;
+text-align: center;
+}
+
+.home h2 {
+    font-size: 12px;
+}
+
+.home img {
+    height: 40rem;
+}
+
+.centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.about {
+background-color: #f4eeed;
+height: 100rem;
+
+  }
+
+  .about img {
+width: 70%;
+height: 20%;
+
+  }
