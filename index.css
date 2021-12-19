@@ -6,6 +6,11 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +49,9 @@ header img {
 
 }
 
+/* ===== vi har sat vores position til absolute på centered for at kunne ligge teksten
+ovenpå billedet ===== */
+
 .centered {
     position: absolute;
     top: 15%;
@@ -51,6 +59,8 @@ header img {
     transform: translate(-50%, -50%);
 
 }
+
+/* ===== About ===== */
 
 .about {
     background-color: #f4eeed;
@@ -60,8 +70,7 @@ header img {
 }
 
 .about img {
-    width: 70%;
-    height: 20%;
+    height: 300px;
     border-radius: 50%;
 
 }
@@ -76,8 +85,12 @@ header img {
     text-align: left;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
+/* ===== Project ===== */ 
 
 .projects {
     color: #000;
@@ -99,12 +112,17 @@ header img {
     height: 200px;
 }
 
-.rumrejsen {
-    height: 23rem;
+
+.project-content {
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .rumrejsen p {
     margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .rumrejsen a {
@@ -112,12 +130,11 @@ header img {
     padding-bottom: 1rem;
 }
 
-.linedance {
-    height: 23rem;
-}
+
 
 .linedance p {
     margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .linedance a {
@@ -126,11 +143,12 @@ header img {
 }
 
 .callmehandy {
-    height: 23rem;
+   
 }
 
 .callmehandy p {
     margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .callmehandy a {
@@ -138,10 +156,12 @@ header img {
     padding-bottom: 1rem;
 }
 
+/* ===== photography ===== */
+
 .photography {
     background-color: #f4eeed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -152,6 +172,7 @@ header img {
     margin: 2rem;
 
 }
+
 
 .photo-content img {
     width: 40%;
@@ -202,12 +223,12 @@ footer {
 
 .footer-flex {
     display: flex;
-
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 footer a {
     color: #ffffff;
-    margin: 1rem;
     font-size: 12px;
 
 }
@@ -217,7 +238,35 @@ footer p {
     justify-content: center;
 }
 
+/* for at få nav-bar til at forsvinde på mobilstøørelse */
+@media screen and (max-width: 767px) {
+
+    nav {
+        display: none;
+    }
+    
+}
+
+/* så kodning også virker på desktop ved at style på det */
 @media screen and (min-width: 768px) {
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    margin-right: 1rem;
+
+}
+
+
     .home img {
         width: 100%;
         height: 650px;
@@ -230,7 +279,9 @@ footer p {
 
     .about p {
         font-size: 20px;
-
+    }
+    .about img {
+        height: 400px;
     }
 
     .project-content {
@@ -253,11 +304,70 @@ footer p {
         padding: 1rem;
     }
 
-    .photo-content {
-        width: 50%;
-        height: 50%;
+    .photography {
+        justify-content: center;
+        font-size: 2rem;
     }
 
+    .photo-content {
+        align-items: center;
+        grid-gap: .5rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
 
+    .photo-content img {
+        width: 100%;
+    }
+
+    /* jeg inddeler hvert element i et grid, hvor jeg tilegner hvert element en plads i grid*/
+    .some {
+        width: 80%;
+        margin-top: .5rem;
+        margin-left: 10%;
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        'ex1 ex1 ex2 ex2'
+        'ex1 ex1 ex3 ex3'
+        ;
+    }
+
+    .some-box1 {
+        grid-area: ex1;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .some-box2 {
+        grid-area: ex2;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .some-box3 {
+        grid-area: ex3;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    /* alternativt kunne man ha' lavet div'er med baggrundsbilleder, for bedre at kunne placere dem i grittet, uden at de skalerer mærkeligt */
+    .some img {
+        width: 100%;
+    }
+
+    .footer-flex {
+        width: 50%;
+        margin-bottom: .5rem;
+    }
 
 }

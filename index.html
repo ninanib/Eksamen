@@ -9,9 +9,20 @@
 </head>
 
 <body>
-    <header>
-        <img src="./img/nbmlogomedpink.png" alt="logo">
+    <header id="home">
+            <a href="#home"><img src="./img/nbmlogomedpink.png" alt="logo"></a>
+        <nav>
+            <!--https://www.geeksforgeeks.org/how-to-redirect-to-a-particular-section-of-a-page-using-html-or-jquery/?fbclid=IwAR1LuB4qP1k8xEgd-6POK9uZFTi_AW3A6Ej1RsPywkE375yp8E9Hg_xntqw-->>
+            <div>
+            <a href="#about">ABOUT.</a>
+            <a href="#projects">PROJECTS.</a>
+            <a href="#photography">PHOTOGRAPHY.</a>
+            <a href="#contact">CONTACT.</a>
+        </div>
+        </nav>
+
     </header>
+
     <section class="home">
 
         <img src="./img/foto.jpg" alt="baggrundsbillede">
@@ -20,44 +31,48 @@
             <h2>Multimediedesigner</h2>
         </div>
     </section>
-    <section class="about">
+
+    <section id="about" class="about">
         <h2>ABOUT ME.</h2>
-        <img src="./img/redi00IMG_9106-2.JPG" alt="migfoto">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione eveniet fugit ipsam placeat.
-            Repellat cumque animi explicabo vitae doloribus at iure distinctio dolorem odit repudiandae. Doloribus esse
-            officia enim.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione eveniet fugit ipsam
-            placeat. Repellat cumque animi explicabo vitae doloribus at iure distinctio dolorem odit repudiandae.
-            Doloribus esse officia enim.</p>
+        <img src="./img/Nina0.jpg" alt="migfoto">
+        <p>My name is Nina, I am 31 years old and I study multimedia design at Zealand in Køge. Beside my study, I love
+            spending time drawing and photographing. I pretty much always have my SLR camera with me, so I can capture
+            moments and frames of what inspires me in my everyday life.</p>
+        <p>I love my creative side, and dream of being able to live off my passion for design. In the world of media, there will always be something new to learn, and this just makes it even more interesting to work with. Usability and creativity are key words in my style of design. After several years in retail, I have encountered user interface challenges and this has simply made my interest in usability greater.</p>
 
     </section>
-    <section class="projects">
+
+    <section id="projects" class="projects">
         <h2>PROJECTS.</h2>
 
         <div class="project-content">
 
             <div class="rumrejsen">
                 <img src="./img/moon.jpg" alt="RUMREJSEN">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum iure nulla, exercitationem
-                    distinctio quae maiores cum eius at tempore possimus adipisci deleniti optio neque doloribus
-                    explicabo nobis? Fugiat, eligendi.
+                <p>Space Travel / Moonshine.</p>
+                    <p>This was my very first project as a multimedia design student.
+                    Our idea was a high school called Moonshine located on the moon. The division of labor in this project was very fluid as we did not all know our competencies and interests yet. My role was primarily design, where I mainly used Adobe Photoshop. I got to try, to me, brand new programs as we all had to code a page for the website.
                 </p>
 
             </div>
 
             <div class="linedance">
                 <img src="./img/line.jpg" alt="LINE DANCE">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum iure nulla, exercitationem
-                    distinctio quae maiores cum eius at tempore possimus adipisci deleniti optio neque doloribus
-                    explicabo nobis? Fugiat, eligendi.
+                <p>Dance, dance, dance / Line Dance.</p>
+                <p>This time we had to once again code one page each.
+                    In addition, I became responsible for design, and should therefore as far as possible, create an overview of the style and make sure that everyone designed in the same style. I had to make sure everyone in the group used the same font, font size and colors on the website as well as in our mock ups.
                 </p>
 
             </div>
 
             <div class="callmehandy">
                 <img src="./img/callmh.jpg" alt="CALL ME HANDY">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum iure nulla, exercitationem
-                    distinctio quae maiores cum eius at tempore possimus adipisci deleniti optio neque doloribus
-                    explicabo nobis? Fugiat, eligendi.
+                <p>Entrepreneurship competition / Call Me Handy</p>
+                <p>This project was divided into 2 parts. In the first half, we had a startup mission where we had to come up with an idea for a company and get into entrepreneurship. In the second part, we were going to learn about SoMe and branding.</p>
+                <p>Our brand Call Me Handy has a concept that involves developing an app that makes everyday life easier in a safe environment. Our app is for people who need a helping hand at home when it comes to various small craft tasks and gardening. In addition, the app is for those who have some experience (possibly not a trained craftsman) in certain areas, who would like to earn a little extra. It is a win-win situation for both parties as a network and flex jobs are created.</p>
+                    
+                <p>I was responsible for Adobe XD, and had the task of keeping track of the design and helping with various challenges. In Adobe XD, we made wireframes and mock ups, where we eventually got our mock up to act as a prototype. When we again all had to make sure to code a page each, I was assigned our about us.
+                    At the presentation, I was in charge of our pitch.
                 </p>
 
             </div>
@@ -65,7 +80,7 @@
 
     </section>
 
-    <section class="photography">
+    <section id="photography" class="photography">
         <h2>PHOTOGRAPY.</h2>
         <div class="photo-content">
             <img src="./img/roseflaske.jpg" alt="roseflaske">
@@ -88,23 +103,21 @@
         </div>
 
         <div class="some">
-            <img src="./img/kommentar1.jpg" alt="kommentar1">
-            <img src="./img/kommentar2.jpg" alt="kommentar2">
-            <img src="./img/kommentar3.jpg" alt="kommentar3">
+            <img class="some-box1" src="./img/kommentar1.jpg" alt="kommentar1">
+            <img class="some-box2" src="./img/kommentar2.jpg" alt="kommentar2">
+            <img class="some-box3" src="./img/kommentar3.jpg" alt="kommentar3">
 
         </div>
     </section>
 
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>CONTACT.</h2>
         <h3>Contact information</h3>
         <p>Nina B. Müller</p>
         <p>Tjørnehaven 10, 2630 Taastrup</p>
         <p>+45 20 41 78 88</p>
         <p>nina162b@edu.zealand.dk</p>
-
-
     </section>
 
     <footer>
